@@ -23,4 +23,3 @@ const simpliyfPath = (path) => {
   return "/" + stack.join("/");
 };
 
-console.log(simpliyfPath("/home/"));
