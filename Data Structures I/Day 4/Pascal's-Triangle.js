@@ -20,6 +20,3 @@ const generate = (numRows) => {
 
   return result;
 };
-console.log(generate(5
-    ));
-
