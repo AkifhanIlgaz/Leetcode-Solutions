@@ -20,5 +20,3 @@ const largestPerimeter = (nums) => {
 
   return maxPerimeter ? maxPerimeter : 0;
 };
-
-console.log(largestPerimeter([1, 2, 1]));
