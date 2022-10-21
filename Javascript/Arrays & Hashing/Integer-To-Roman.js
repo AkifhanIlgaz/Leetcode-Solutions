@@ -33,3 +33,5 @@ const intToRoman = (num) => {
 
   return result;
 };
+
+console.log(intToRoman(55));
