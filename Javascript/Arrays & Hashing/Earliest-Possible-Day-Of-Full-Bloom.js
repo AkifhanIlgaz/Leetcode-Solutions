@@ -19,7 +19,6 @@ const earliestFullBloom = (plantTime, growTime) => {
 
   plant.sort((a, b) => b.growTime - a.growTime);
 
-  console.log(plant);
   let time = 0;
   let max = 0;
 
@@ -30,4 +29,4 @@ const earliestFullBloom = (plantTime, growTime) => {
   return max;
 };
 
-earliestFullBloom([1, 2, 3, 2], [2, 1, 2, 1]);
+earliestFullBloom([1, 4, 3], [2, 3, 1]);
