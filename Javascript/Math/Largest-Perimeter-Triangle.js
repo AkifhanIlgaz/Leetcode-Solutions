@@ -3,8 +3,7 @@
  * @return {number}
  */
 const largestPerimeter = (nums) => {
-  nums.sort((a, b) => a - b);
-  nums.reverse();
+  nums.sort((a, b) => b - a);
 
   let maxPerimeter = 0;
 
@@ -18,5 +17,5 @@ const largestPerimeter = (nums) => {
     }
   }
 
-  return maxPerimeter ? maxPerimeter : 0;
+  return maxPerimeter;
 };
