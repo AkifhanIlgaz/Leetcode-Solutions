@@ -24,3 +24,4 @@ const intToLetter = (int) => {
   return String.fromCharCode(int + "a".charCodeAt(0) - 1);
 };
 
+freqAlphabets("1326#");
