@@ -13,8 +13,8 @@
  */
 const guessNumber = (n) => {
   let middle;
-  let low = 1;
-  let high = n;
+
+  let [low, high] = [1, n];
 
   while (low <= high) {
     middle = Math.floor((low + high) / 2);
