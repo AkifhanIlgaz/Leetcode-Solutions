@@ -11,6 +11,8 @@ impl Solution {
         }
 
         result
+
+        //  n.count_ones() as i32
     }
 }
 
