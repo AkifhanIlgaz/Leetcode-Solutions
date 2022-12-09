@@ -1,4 +1,4 @@
 # Leetcode-Solutions
 
 
-  [![leetcode](https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black)](https://leetcode.com/AkifhanIlgaz/)
+<a href="https://www.leetcode.com/akifhanilgaz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="akifhanilgaz" height="30" width="40" /></a>
