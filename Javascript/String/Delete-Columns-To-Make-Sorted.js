@@ -3,23 +3,16 @@
  * @return {number}
  */
 const minDeletionSize = (strs) => {
-  let count = 0;
+  let deleteCount = 0;
 
   for (index in strs[0]) {
-    if (!isSorted(strs.map((s) => s[index]))) {
-      count++;
+    for (let i = 1; i < strs.length; i++) {
+      if (strs[i].charCodeAt(index) < strs[i - 1].charCodeAt(index)) {
+        deleteCount++;
+        break;
+      }
     }
   }
-  return count;
-};
 
-const isSorted = (str) => {
-  for (let i = 0; i < str.length - 1; i++) {
-    if (str[i] > str[i + 1]) {
-      return false;
-    }
-  }
-  return true;
+  return deleteCount;
 };
-
-minDeletionSize(["cba", "daf", "ghi"]);
