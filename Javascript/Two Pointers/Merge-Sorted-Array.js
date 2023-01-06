@@ -5,7 +5,7 @@
  * @param {number} n
  * @return {void} Do not return anything, modify nums1 in-place instead.
  */
-var merge = function (nums1, m, nums2, n) {
+const merge = (nums1, m, nums2, n) => {
   let lastIndex = m + n - 1;
 
   while (m > 0 && n > 0) {
