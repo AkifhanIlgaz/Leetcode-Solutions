@@ -3,29 +3,25 @@
  * @return {number}
  */
 var maxPoints = function (points) {
-  if (points.length < 2) {
-    return points.length;
-  }
-  let max = 2;
+  let res = 1;
 
   for (let i = 0; i < points.length; i++) {
-    const map = new Map();
-    const point = points[i];
+    const count = new Map();
+    const point1 = points[i];
     for (let j = i + 1; j < points.length; j++) {
-      const p2 = points[j];
-      let angle;
-      if (p2[0] === point[0]) {
-        angle = Number.MAX_SAFE_INTEGER;
+      const point2 = points[j];
+      let slope;
+      if (point2[0] === point1[0]) {
+        slope = Number.MAX_SAFE_INTEGER;
       } else {
-        angle = (p2[1] - point[1]) / (p2[0] - point[0]);
+        slope = (point2[1] - point1[1]) / (point2[0] - point1[0]);
       }
-      if (!map.has(angle)) {
-        map.set(angle, 2);
-      } else {
-        map.set(angle, map.get(angle) + 1);
-        max = Math.max(max, map.get(angle));
-      }
+      !count.has(slope)
+        ? count.set(slope, 2)
+        : count.set(slope, count.get(slope) + 1);
+
+      res = Math.max(res, count.get(slope));
     }
   }
-  return max;
+  return res;
 };
