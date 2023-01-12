@@ -10,8 +10,7 @@ class BrowserHistory {
    */
 
   visit(url) {
-    ++this.current;
-    this.history[this.current] = url;
+    this.history[++this.current] = url;
     this.history.length = this.current + 1;
   }
 
