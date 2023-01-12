@@ -19,11 +19,7 @@ class BrowserHistory {
    * @return {string}
    */
   back(steps) {
-    if (steps > this.current) {
-      this.current = 0;
-      return this.history[this.current];
-    }
-    this.current -= steps;
+    this.current = Math.max(this.current - steps, 0);
     return this.history[this.current];
   }
 
@@ -32,12 +28,7 @@ class BrowserHistory {
    * @return {string}
    */
   forward(steps) {
-    if (this.current + steps > this.history.length - 1) {
-      this.current = this.history.length - 1;
-      return this.history[this.current];
-    }
-
-    this.current += steps;
+    this.current = Math.min(this.current + steps, this.history.length - 1);
     return this.history[this.current];
   }
 }
