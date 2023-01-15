@@ -30,13 +30,15 @@ impl UnionFind {
         let p1 = self.find(n1);
         let p2 = self.find(n2);
 
-        match p1.cmp(&p2) {
-            Ordering::Equal => return false,
+        if p1 == p2 {
+            return false;
+        }
+        match self.rank[p1].cmp(&self.rank[p2]) {
             Ordering::Greater => {
                 self.parent[p2] = p1;
                 self.rank[p1] += self.rank[p2];
             }
-            Ordering::Less => {
+            _ => {
                 self.parent[p1] = p2;
                 self.rank[p2] = self.rank[p1];
             }
