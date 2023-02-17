@@ -9,6 +9,8 @@ class TreeNode {
   }
 }
 
+export {};
+
 function minDiffInBST(root: TreeNode | null): number {
   let prev: TreeNode | null = null;
   let res = Number.MAX_VALUE;
