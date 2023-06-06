@@ -1,8 +1,6 @@
 package main
 
-func main() {
 
-}
 
 func findRedundantConnection(edges [][]int) []int {
 	parent := make([]int, len(edges)+1)

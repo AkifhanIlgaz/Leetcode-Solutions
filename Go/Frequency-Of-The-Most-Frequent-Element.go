@@ -5,9 +5,7 @@ import (
 	"sort"
 )
 
-func main() {
 
-}
 
 func maxFrequency(nums []int, k int) int {
 	sort.Ints(nums)

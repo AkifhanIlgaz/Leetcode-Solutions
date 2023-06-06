@@ -2,10 +2,6 @@ package main
 
 import "math"
 
-func main() {
-
-}
-
 func maxArea(height []int) int {
 	result, left, right := 0, 0, len(height)-1
 
@@ -16,7 +12,6 @@ func maxArea(height []int) int {
 
 		if height[left] < height[right] {
 			left++
-		} else {
 			right--
 		}
 	}

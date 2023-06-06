@@ -1,8 +1,6 @@
 package main
 
-func main() {
 
-}
 
 func maxSubArray(nums []int) int {
 	currentSum, maxSum := 0, nums[0]

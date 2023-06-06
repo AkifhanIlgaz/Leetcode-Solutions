@@ -1,8 +1,6 @@
 package main
 
-func main() {
 
-}
 
 func uniqueOccurrences(arr []int) bool {
 	occurrences := map[int]int{}

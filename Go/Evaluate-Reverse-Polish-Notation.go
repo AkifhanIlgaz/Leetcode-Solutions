@@ -2,9 +2,7 @@ package main
 
 import "strconv"
 
-func main() {
 
-}
 
 func evalRPN(tokens []string) int {
 	stack := []int{}

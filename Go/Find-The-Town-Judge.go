@@ -1,8 +1,6 @@
 package main
 
-func main() {
 
-}
 
 func findJudge(n int, trust [][]int) int {
 	if n == 1 {

@@ -1,9 +1,5 @@
 package main
 
-func main() {
-
-}
-
 func minFlipsMonoIncr(s string) int {
 	res, countOne := 0, 0
 

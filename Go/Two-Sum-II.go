@@ -1,8 +1,6 @@
 package main
 
-func main() {
 
-}
 
 func twoSum(numbers []int, target int) []int {
 	left, right := 0, len(numbers)-1

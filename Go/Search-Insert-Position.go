@@ -1,8 +1,6 @@
 package main
 
-func main() {
 
-}
 
 func searchInsert(nums []int, target int) int {
 	left, right := 0, len(nums)-1

@@ -1,11 +1,9 @@
 package main
 
-func main() {}
 
 func validPalindrome(s string) bool {
 	if len(s) == 1 {
 		return true
-	}
 
 	left, right := 0, len(s)-1
 

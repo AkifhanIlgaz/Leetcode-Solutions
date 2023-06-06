@@ -2,9 +2,7 @@ package main
 
 import "math"
 
-func main() {
 
-}
 
 func rob(nums []int) int {
 	rob1, rob2 := 0, 0

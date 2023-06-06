@@ -1,8 +1,6 @@
 package main
 
-func main() {
 
-}
 
 func halvesAreAlike(s string) bool {
 	middle := len(s) / 2

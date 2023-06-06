@@ -2,9 +2,7 @@ package main
 
 import "strconv"
 
-func main() {
 
-}
 
 func subtractProductAndSum(n int) int {
 	sum, product := 0, 1

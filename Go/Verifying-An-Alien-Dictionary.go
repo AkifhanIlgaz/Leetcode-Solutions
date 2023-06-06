@@ -1,8 +1,6 @@
 package main
 
-func main() {
 
-}
 
 func isAlienSorted(words []string, order string) bool {
 	orderMap := map[byte]int{}

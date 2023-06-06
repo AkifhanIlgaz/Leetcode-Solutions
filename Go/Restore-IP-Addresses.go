@@ -2,9 +2,7 @@ package main
 
 import "strconv"
 
-func main() {
 
-}
 
 func restoreIpAddresses(s string) []string {
 	res := []string{}

@@ -1,8 +1,6 @@
 package main
 
-func main() {
 
-}
 
 func canJump(nums []int) bool {
 	goal := len(nums) - 1

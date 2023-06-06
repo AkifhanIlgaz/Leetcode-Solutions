@@ -1,8 +1,6 @@
 package main
 
-func main() {
 
-}
 
 func canVisitAllRooms(rooms [][]int) bool {
 	if len(rooms) == 0 {

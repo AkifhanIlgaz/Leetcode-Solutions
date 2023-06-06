@@ -2,9 +2,7 @@ package main
 
 import "math"
 
-func main() {
 
-}
 
 func average(salary []int) float64 {
 	var min float64 = float64(salary[0])

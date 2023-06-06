@@ -1,9 +1,5 @@
 package main
 
-func main() {
-	reverseVowels("hello")
-}
-
 func reverseVowels(s string) string {
 	left, right := 0, len(s)-1
 

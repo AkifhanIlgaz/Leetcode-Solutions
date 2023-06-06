@@ -1,8 +1,6 @@
 package main
 
-func main() {
 
-}
 
 func maxSubarraySumCircular(nums []int) int {
 	globalMax, globalMin := nums[0], nums[0]

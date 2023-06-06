@@ -5,12 +5,6 @@ import (
 	"strconv"
 )
 
-func main() {
-	fmt.Println(encode([]string{"neet", "co#de", "is", "awesome"})) 
-
-	fmt.Println(decode("4#neet5#co#de2#is7#awesome"))
-}
-
 func encode(strs []string) string {
 	result := ""
 	for _, str := range strs {
@@ -28,9 +22,9 @@ func decode(str string) []string {
 			j++
 		}
 		len, _ := strconv.Atoi(str[i:j])
-		word := str[j +1:j +1 +len]
+		word := str[j+1 : j+1+len]
 		decodedWords = append(decodedWords, word)
-		i = j +1 +len
+		i = j + 1 + len
 	}
 	return decodedWords
 }

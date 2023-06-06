@@ -1,3 +1,5 @@
+package main
+
 func findAllConcatenatedWordsInADict(words []string) []string {
 	wordSet := initWordSet(words)
 	res := []string{}

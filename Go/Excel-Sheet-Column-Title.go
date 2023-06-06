@@ -1,8 +1,6 @@
 package main
 
-func main() {
 
-}
 
 func convertToTitle(columnNumber int) string {
 	var result string

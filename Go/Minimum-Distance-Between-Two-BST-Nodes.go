@@ -2,9 +2,7 @@ package main
 
 import "math"
 
-func main() {
 
-}
 
 type TreeNode struct {
 	Val   int
