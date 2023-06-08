@@ -1,7 +1,5 @@
 package main
 
-
-
 func totalFruit(fruits []int) int {
 	count := map[int]int{}
 	left, total, res := 0, 0, 0
