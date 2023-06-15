@@ -2,6 +2,8 @@ package main
 
 import "math"
 
+// Use Binary Search
+
 func rearrangeCharacters(s string, target string) int {
 	targetMap := initMap(target)
 	sMap := initMap(s)
