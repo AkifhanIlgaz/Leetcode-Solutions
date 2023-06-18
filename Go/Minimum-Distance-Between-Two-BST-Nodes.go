@@ -32,10 +32,3 @@ func minDiffInBST(root *TreeNode) int {
 	dfs(root)
 	return res
 }
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
