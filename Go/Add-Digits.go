@@ -5,19 +5,19 @@ func addDigits(num int) int {
 		return num
 	}
 
-	num = parseNum(num)
+	num = sumOfDigits(num)
 
 	return addDigits(num)
 
 }
 
-func parseNum(num int) int {
-	sumOfDigits := 0
+func sumOfDigits(num int) int {
+	sum := 0
 
 	for num > 0 {
-		sumOfDigits += num % 10
+		sum += num % 10
 		num = num / 10
 	}
 
-	return sumOfDigits
+	return sum
 }
