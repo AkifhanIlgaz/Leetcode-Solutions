@@ -2,28 +2,20 @@ package main
 
 func intersection(nums1 []int, nums2 []int) []int {
 	numsMap := map[int]bool{}
-	intersectionMap := map[int]bool{}
+	intersectionNums := []int{}
 
 	for _, num := range nums1 {
 		numsMap[num] = true
 	}
 
 	for _, num := range nums2 {
-		if _, ok := numsMap[num]; ok {
-			intersectionMap[num] = true
+		if numsMap[num] == true {
+			intersectionNums = append(intersectionNums, num)
+			numsMap[num] = false
 		}
 	}
 
-	return mapToSlice(intersectionMap)
+	return intersectionNums
 
 }
 
-func mapToSlice(numsMap map[int]bool) []int {
-	arr := []int{}
-
-	for num, _ := range numsMap {
-		arr = append(arr, num)
-	}
-
-	return arr
-}
