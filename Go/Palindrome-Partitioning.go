@@ -1,7 +1,5 @@
 package main
 
-
-
 func partition(s string) [][]string {
 	res, part := [][]string{}, []string{}
 

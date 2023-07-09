@@ -18,20 +18,20 @@ func validPalindrome(s string) bool {
 	return true
 }
 
-func isPalindrome(s string) bool {
-	if len(s) == 1 {
-		return true
-	}
+// func isPalindrome(s string) bool {
+// 	if len(s) == 1 {
+// 		return true
+// 	}
 
-	left, right := 0, len(s)-1
+// 	left, right := 0, len(s)-1
 
-	for left < right {
-		if s[left] != s[right] {
-			return false
-		}
-		left++
-		right--
-	}
+// 	for left < right {
+// 		if s[left] != s[right] {
+// 			return false
+// 		}
+// 		left++
+// 		right--
+// 	}
 
-	return true
-}
+// 	return true
+// }
