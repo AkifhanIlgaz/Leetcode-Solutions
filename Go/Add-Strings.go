@@ -44,10 +44,3 @@ func atoi(a byte) byte {
 func itoa(a byte) byte {
 	return '0' + a
 }
-
-func max(a, b int) int {
-	if a >= b {
-		return a
-	}
-	return b
-}
